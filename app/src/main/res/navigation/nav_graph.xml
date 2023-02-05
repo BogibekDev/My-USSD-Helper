@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="dev.bogibek.myussdhelper.ui.fragment.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_uzmobileHomeFragment"
+            app:destination="@id/uzmobileHomeFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_ucellHomeFragment"
+            app:destination="@id/ucellHomeFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_mobiuzHomeFragment"
+            app:destination="@id/mobiuzHomeFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_beelineHomeFragment"
+            app:destination="@id/beelineHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/beelineHomeFragment"
+        android:name="dev.bogibek.myussdhelper.ui.fragment.beeline.BeelineHomeFragment"
+        android:label="fragment_beeline_home"
+        tools:layout="@layout/fragment_beeline_home" />
+    <fragment
+        android:id="@+id/mobiuzHomeFragment"
+        android:name="dev.bogibek.myussdhelper.ui.fragment.mobiuz.MobiuzHomeFragment"
+        android:label="fragment_mobiuz_home"
+        tools:layout="@layout/fragment_mobiuz_home" />
+    <fragment
+        android:id="@+id/ucellHomeFragment"
+        android:name="dev.bogibek.myussdhelper.ui.fragment.ucell.UcellHomeFragment"
+        android:label="fragment_ucell_home"
+        tools:layout="@layout/fragment_ucell_home" />
+    <fragment
+        android:id="@+id/uzmobileHomeFragment"
+        android:name="dev.bogibek.myussdhelper.ui.fragment.uzmobile.UzmobileHomeFragment"
+        android:label="fragment_uzmobile_home"
+        tools:layout="@layout/fragment_uzmobile_home" />
+</navigation>

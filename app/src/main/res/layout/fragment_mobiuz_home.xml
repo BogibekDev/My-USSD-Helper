@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.mobiuz.MobiuzHomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_margin="12dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/llUzmobile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_uzmobile" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llMobiuz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_mobiuz" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llUcell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_ucell" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBeeline"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="76dp"
+                android:layout_height="76dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_beeline" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>
