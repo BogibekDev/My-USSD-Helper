@@ -73,5 +73,8 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
     testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_version"
 
+    implementation "com.github.uin3566:AllAngleExpandableButton:v1.2.0"
+
+
 
 }

@@ -12,16 +12,24 @@
         tools:layout="@layout/fragment_splash" >
         <action
             android:id="@+id/action_splashFragment_to_uzmobileHomeFragment"
-            app:destination="@id/uzmobileHomeFragment" />
+            app:destination="@id/uzmobileHomeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashFragment_to_ucellHomeFragment"
-            app:destination="@id/ucellHomeFragment" />
+            app:destination="@id/ucellHomeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashFragment_to_mobiuzHomeFragment"
-            app:destination="@id/mobiuzHomeFragment" />
+            app:destination="@id/mobiuzHomeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_splashFragment_to_beelineHomeFragment"
-            app:destination="@id/beelineHomeFragment" />
+            app:destination="@id/beelineHomeFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/beelineHomeFragment"
