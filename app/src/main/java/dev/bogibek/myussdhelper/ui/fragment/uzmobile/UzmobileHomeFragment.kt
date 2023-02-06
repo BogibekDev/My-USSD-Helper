@@ -6,10 +6,13 @@ import androidx.fragment.app.Fragment
 import dev.bogibek.myussdhelper.R
 import dev.bogibek.myussdhelper.databinding.FragmentUzmobileHomeBinding
 import dev.bogibek.myussdhelper.manager.SharePrefManager
+import dev.bogibek.myussdhelper.utils.collapse
+import dev.bogibek.myussdhelper.utils.expand
 import dev.bogibek.myussdhelper.utils.viewBinding
 
 
 class UzmobileHomeFragment : Fragment(R.layout.fragment_uzmobile_home) {
+    private var isExpanded = false
     private val binding by viewBinding { FragmentUzmobileHomeBinding.bind(it) }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -29,6 +32,15 @@ class UzmobileHomeFragment : Fragment(R.layout.fragment_uzmobile_home) {
             }
             llBeeline.setOnClickListener {
                 SharePrefManager(requireContext()).saveInt("destination", 3)
+            }
+            ivMore.setOnClickListener {
+                if (isExpanded) {
+                    llMenu.collapse()
+                    isExpanded = false
+                } else {
+                    llMenu.expand()
+                    isExpanded = true
+                }
             }
         }
     }
